@@ -113,12 +113,15 @@ function updateDisplay() {
     countDisplay.textContent = count;
 //    console.log(count); runs when called below, so can comment out
 //    Bonus task: add conditional trigger & resulting event
-    if (count<0) {
+    if (count < 0) {
         countDisplay.style.color = 'red';
     } else {
         countDisplay.style.color = 'black';
     }
 }
+// Function and bonus conditional work.
+// Need else fork because red shift embeds red as default color...
+//...so JS needs to turn it black when nonnegativity state occurs
 
 // TODO: When plusBtn is clicked: add 1 to count, then call updateDisplay().
 plusBtn.addEventListener("click", function () {
